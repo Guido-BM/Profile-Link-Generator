@@ -1,6 +1,7 @@
 div.col-5{
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size: 100% 100%; 
+    aspect-ratio: 19;
     background-image: url('bg-phone.png');
     height: 400px;
 }
