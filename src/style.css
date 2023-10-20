@@ -1,0 +1,12 @@
+div.col-5{
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-image: url('bg-phone.png');
+    height: 400px;
+}
+body{
+    height: 100%;
+    margin: 0;
+
+    background-color: lightgrey;
+}
