@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   buttonCreateNewPost.addEventListener("click", () => {
     const platformOptions = `
       <option selected></option>
-      <option value="Github">Github</option>
-      <option value="YouTube">YouTube</option>
-      <option value="LinkedIn">LinkedIn</option>
-      <option value="Instagram">Instagram</option>
-      <option value="Others">Others</option>
+      <option value="github">Github</option>
+      <option value="youtube">YouTube</option>
+      <option value="linkedin">LinkedIn</option>
+      <option value="instagram">Instagram</option>
+      <option value="others">Others</option>
     `;
 
     const newForm = document.createElement("div");
@@ -54,9 +54,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const urlInput = form.querySelector("input");
 
       if (platformSelect.value && urlInput.value) {
-        buttonsContainer += `<a href="${
-          urlInput.value
-        }" class="btn btn-primary" style="margin-right: 10px; background-color: blue; color: white;">Link #${
+        buttonsContainer += `<a href="${urlInput.value}" id="${
+          platformSelect.value
+        }" class="btn ${
+          platformSelect.value
+        }" style="margin-right: 10px; background-color: blue; color: white;">Link #${
           index + 1
         }</a>`;
       }
